@@ -114,7 +114,7 @@ node ("tf-ubu-jen-slave-00") {
         stage('Dependencies') {
             //def target_repo_path = get_target_repo_path()
             sh "pwd"
-            sh "npm init"
+            sh "/home/ubuntu/.nvm/versions/node/v16.13.0/bin/npm init"
             
         }
 
@@ -132,7 +132,7 @@ node ("tf-ubu-jen-slave-00") {
 
          stage('e2e Tests') {
             //def target_repo_path = get_target_repo_path()
-            sh "npx cypress run"
+            sh "/home/ubuntu/.nvm/versions/node/v16.13.0/bin/npx cypress run"
             
         }
 
