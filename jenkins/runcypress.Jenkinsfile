@@ -114,6 +114,7 @@ node ("tf-ubu-jen-slave-00") {
         stage('Dependencies') {
             //def target_repo_path = get_target_repo_path()
             sh "pwd"
+            sh "/home/ubuntu/.nvm/versions/node/v16.13.0/bin/npm install"
             sh "/home/ubuntu/.nvm/versions/node/v16.13.0/bin/npm init"
             
         }
