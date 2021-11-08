@@ -49,7 +49,7 @@ node ("tf-ubu-jen-slave-00") {
                 choice(
                     name: 'project',
                     description: 'Name of the project to run cypress against',
-                    defaultValue: 'C360\n',
+                    defaultValue: 'C360\nww',
                 ),
                 string(
                     name: 'branch',
